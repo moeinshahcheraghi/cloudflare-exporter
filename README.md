@@ -6,7 +6,7 @@
 
 A production-ready Prometheus exporter for Cloudflare zone metrics with comprehensive monitoring capabilities. This exporter collects detailed analytics from Cloudflare's GraphQL API and exposes them in Prometheus format for visualization and alerting.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [Architecture](#-architecture)
@@ -21,7 +21,7 @@ A production-ready Prometheus exporter for Cloudflare zone metrics with comprehe
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## ✨ Features
+##  Features
 
 ### Core Capabilities
 
@@ -43,7 +43,7 @@ A production-ready Prometheus exporter for Cloudflare zone metrics with comprehe
 - Health check endpoint for orchestration
 - Minimal resource footprint
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 cloudflare-exporter/
@@ -77,7 +77,7 @@ cloudflare-exporter/
 4. **Observability**: Structured logging with clear status indicators
 5. **Security**: Follows container security best practices
 
-## 📦 Prerequisites
+##  Prerequisites
 
 ### Required
 
@@ -92,13 +92,13 @@ cloudflare-exporter/
 - Prometheus server (for metrics collection)
 - Grafana (for visualization)
 
-## 🚀 Installation
+##  Installation
 
 ### Method 1: Docker (Recommended)
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/cloudflare-exporter.git
+   git clone https://github.com/moeinshahcheraghi/cloudflare-exporter.git
    cd cloudflare-exporter
    ```
 
@@ -145,7 +145,7 @@ cloudflare-exporter/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/cloudflare-exporter.git
+   git clone https://github.com/moeinshahcheraghi/cloudflare-exporter.git
    cd cloudflare-exporter
    ```
 
@@ -166,7 +166,7 @@ cloudflare-exporter/
    ./cloudflare-exporter
    ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -207,7 +207,7 @@ scrape_configs:
     scrape_timeout: 30s
 ```
 
-## 📊 Usage
+##  Usage
 
 ### Local Development
 
@@ -633,7 +633,7 @@ curl http://localhost:9199/health
 curl http://localhost:9199/metrics | grep cloudflare_zone
 ```
 
-## 📝 Best Practices
+##  Best Practices
 
 ### 1. Security
 
@@ -665,7 +665,7 @@ curl http://localhost:9199/metrics | grep cloudflare_zone
 - Use health checks in load balancers
 - Implement graceful shutdown
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -683,20 +683,20 @@ Contributions are welcome! Please follow these steps:
 - Maintain backward compatibility
 - Use conventional commit messages
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Prometheus](https://prometheus.io/) - Monitoring system and time series database
 - [Cloudflare](https://www.cloudflare.com/) - Web infrastructure and security company
 - [Go Prometheus Client](https://github.com/prometheus/client_golang) - Prometheus instrumentation library
 
-## 📞 Support
+##  Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/cloudflare-exporter/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/cloudflare-exporter/discussions)
+- **Issues**: [GitHub Issues](https://github.com/moeinshahcheraghi/cloudflare-exporter/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/moeinshahcheraghi/cloudflare-exporter/discussions)
 - **Documentation**: This README and inline code comments
 
 ## 🗺 Roadmap
@@ -712,4 +712,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for the DevOps community**
+**Made with  for the DevOps community**
