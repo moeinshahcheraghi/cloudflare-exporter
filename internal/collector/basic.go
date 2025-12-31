@@ -23,17 +23,18 @@ func NewCollector(client *cloudflare.Client, metrics *metrics.Metrics, zoneID st
 	}
 }
 
+// CollectAll collects all available metrics
 func (c *Collector) CollectAll() error {
 	if err := c.CollectBasicMetrics(); err != nil {
-		log.Printf(" Basic metrics: %v", err)
+		log.Printf("  Basic metrics: %v", err)
 	}
 
 	if err := c.CollectStatusMetrics(); err != nil {
-		log.Printf(" Status metrics: %v", err)
+		log.Printf("  Status metrics: %v", err)
 	}
 
 	if err := c.CollectContentTypeMetrics(); err != nil {
-		log.Printf(" Content type metrics: %v", err)
+		log.Printf("  Content type metrics: %v", err)
 	}
 
 	if err := c.CollectFirewallMetrics(); err != nil {

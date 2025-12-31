@@ -83,7 +83,7 @@ func (c *Collector) processStatusMetrics(data map[string]interface{}) error {
 		c.metrics.EdgeResponseStatus.WithLabelValues(c.zoneID, status).Set(float64(count))
 	}
 
-	log.Printf(" Status: %d codes | 2xx:%d 3xx:%d 4xx:%d 5xx:%d",
+	log.Printf("✅ Status: %d codes | 2xx:%d 3xx:%d 4xx:%d 5xx:%d",
 		len(statusMap), status2xxTotal, status3xxTotal, status4xxTotal, status5xxTotal)
 
 	return nil

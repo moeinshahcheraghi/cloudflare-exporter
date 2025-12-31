@@ -28,11 +28,9 @@ type Metrics struct {
 	Status4xx          *prometheus.GaugeVec
 	Status5xx          *prometheus.GaugeVec
 
-	// Content Type
 	ContentTypeRequests *prometheus.GaugeVec
 	ContentTypeBytes    *prometheus.GaugeVec
 
-	// Firewall Metrics
 	FirewallEvents    *prometheus.GaugeVec
 	FirewallAction    *prometheus.GaugeVec
 	FirewallSource    *prometheus.GaugeVec
