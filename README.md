@@ -347,7 +347,7 @@ spec:
     app: cloudflare-exporter
 ```
 
-## 📈 Metrics
+##  Metrics
 
 ### HTTP Metrics
 
