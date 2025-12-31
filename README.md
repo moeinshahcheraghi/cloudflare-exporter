@@ -15,7 +15,6 @@ A production-ready Prometheus exporter for Cloudflare zone metrics with comprehe
 - [Configuration](#-configuration)
 - [Usage](#-usage)
 - [Metrics](#-metrics)
-- [Grafana Dashboards](#-grafana-dashboards)
 - [Development](#-development)
 - [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
@@ -413,66 +412,8 @@ spec:
 | `cloudflare_zone_client_wait_time_total_ms` | Gauge | Total client wait time (ms) |
 | `cloudflare_zone_client_wait_time_avg_ms` | Gauge | Average wait time per request (ms) |
 
-## 📊 Grafana Dashboards
 
-### Sample PromQL Queries
-
-**Request Rate**:
-```promql
-rate(cloudflare_zone_requests_total[5m])
-```
-
-**Cache Hit Rate Over Time**:
-```promql
-cloudflare_zone_cache_hit_rate_percent
-```
-
-**Top Countries by Traffic**:
-```promql
-topk(10, cloudflare_zone_requests_country)
-```
-
-**Error Rate**:
-```promql
-(cloudflare_zone_status_4xx_total + cloudflare_zone_status_5xx_total) / cloudflare_zone_requests_total * 100
-```
-
-**Bandwidth by Content Type**:
-```promql
-sum by (content_type) (cloudflare_zone_bandwidth_content_type_bytes)
-```
-
-**Firewall Block Rate**:
-```promql
-cloudflare_zone_firewall_action{action="block"}
-```
-
-### Dashboard Panels
-
-Create panels in Grafana for:
-
-1. **Overview**
-   - Total requests (stat)
-   - Cache hit rate (gauge)
-   - Bandwidth usage (graph)
-   - Request rate (graph)
-
-2. **Performance**
-   - Response time (graph)
-   - Status code distribution (pie chart)
-   - Top content types (bar gauge)
-
-3. **Security**
-   - Threats detected (stat)
-   - Firewall events (graph)
-   - Top attacking countries (geo map)
-   - Top attacking IPs (table)
-
-4. **Geographic**
-   - Requests by country (world map)
-   - Bandwidth by region (bar chart)
-
-## 🛠 Development
+##  Development
 
 ### Project Structure
 
@@ -576,7 +517,7 @@ docker build -t cloudflare-exporter:latest .
 docker build -t cloudflare-exporter:v1.0.0 .
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
