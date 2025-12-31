@@ -699,17 +699,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/moeinshahcheraghi/cloudflare-exporter/discussions)
 - **Documentation**: This README and inline code comments
 
-## 🗺 Roadmap
-
-- [ ] Add support for multiple zones
-- [ ] Implement caching layer
-- [ ] Add custom metric aggregations
-- [ ] Support for Cloudflare Workers metrics
-- [ ] Add Grafana dashboard JSON export
-- [ ] Implement metric filtering by time range
-- [ ] Add support for Cloudflare Logs
-- [ ] Create Helm chart for Kubernetes
-
----
 
 **Made with  for the DevOps community**
